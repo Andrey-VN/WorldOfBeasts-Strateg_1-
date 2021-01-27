@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using WorldOfBeasts.Season.Fall;
-using WorldOfBeasts.Season.Spring;
-using WorldOfBeasts.Season.Summer;
-using WorldOfBeasts.Season.Winter;
+using WorldOfBeasts.Strateg;
 
 namespace WorldOfBeasts.Beasts
 {
@@ -12,10 +9,8 @@ namespace WorldOfBeasts.Beasts
     {
         public Hare()
         {
-            fall = new HareFall();
-            spring = new HareSpring();
-            summer = new HareSummer();
-            winter = new HareWinter();
+            strategAnimalInSeson = new StrategHare();
+
         }
         public override void Name()
         {

@@ -2,28 +2,20 @@
 using System.Collections.Generic;
 using System.Text;
 using WorldOfBeasts.Fly;
-using WorldOfBeasts.Season.Fall;
-using WorldOfBeasts.Season.Spring;
-using WorldOfBeasts.Season.Summer;
-using WorldOfBeasts.Season.Winter;
+using WorldOfBeasts.Season;
+
 
 namespace WorldOfBeasts.Beasts
 {
     public abstract class Animal
     {
         protected IFly fly;
-        protected IFall fall;
-        protected ISpring spring;
-        protected ISummer summer;
-        protected IWinter winter;
+
+        protected IStrategAnimalInSeson strategAnimalInSeson;
 
         public Animal()
         {
             fly = new NoFly();
-            fall = new NoInfoFall();
-            spring = new NoInfoSpring();
-            summer = new NoInfoSummer();
-            winter = new NoInfoWinter();
         }
         public void Fly()
         {
@@ -31,19 +23,19 @@ namespace WorldOfBeasts.Beasts
         }
         public void Spring()
         {
-            spring.SpringSeson();
+            strategAnimalInSeson.Spring();
         }
         public void Summer()
         {
-            summer.SummerSeson();
+            strategAnimalInSeson.Summer();
         }
         public void Winter()
         {
-            winter.WinterSeson();
+            strategAnimalInSeson.Winter();
         }
         public void Fall()
         {
-            fall.FallSeson();
+            strategAnimalInSeson.Fall();
         }
 
 

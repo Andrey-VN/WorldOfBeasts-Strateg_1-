@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using WorldOfBeasts.Fly;
-using WorldOfBeasts.Season.Fall;
-using WorldOfBeasts.Season.Spring;
-using WorldOfBeasts.Season.Summer;
-using WorldOfBeasts.Season.Winter;
+
+using WorldOfBeasts.Strateg;
 
 namespace WorldOfBeasts.Beasts
 {
@@ -14,10 +12,7 @@ namespace WorldOfBeasts.Beasts
         public Dove()
         {
             fly = new YesFly();
-            fall = new DoveFall();
-            spring = new DoveSpring();
-            summer = new DoveSummer();
-            winter = new DoveWinter();
+            strategAnimalInSeson = new StrategDove();
 
         }
         public override void Name()
