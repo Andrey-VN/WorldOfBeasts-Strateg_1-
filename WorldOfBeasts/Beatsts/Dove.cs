@@ -11,9 +11,8 @@ namespace WorldOfBeasts.Beasts
     {
         public Dove()
         {
-            fly = new YesFly();
-            strategAnimalInSeson = new StrategDove();
-
+            fly = new YesFly();                          
+            strategAnimalInSeson = new StrategDove();  
         }
         public override void Name()
         {

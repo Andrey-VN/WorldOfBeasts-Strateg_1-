@@ -6,6 +6,9 @@ namespace WorldOfBeasts.Season
 {
     public interface IStrategAnimalInSeson
     {
+        /// <summary>
+        /// Общий интерфейс для всех реализующих алгоритмов зависимости конкретного животного от конкретного времени года
+        /// </summary>
         public void Fall();
         public void Spring();
         public void Summer();

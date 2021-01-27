@@ -7,6 +7,9 @@ namespace WorldOfBeasts.Strateg
 {
     public class StrategDove : IStrategAnimalInSeson
     {
+        /// <summary>
+        /// реализация методов интерфейса IStrategAnimalInSeson
+        /// </summary>
         public void Fall()
         {
             Console.WriteLine("Линька у взрослых голубей обычно проходит осенью, а у молодняка после того, как он начинает летать.");
